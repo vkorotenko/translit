@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kvn.Translit", "Kvn.Translit\Kvn.Translit.csproj", "{2EFA542A-8A0D-47A4-92E1-0401F16E1F40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kvn.TranslitTests", "Kvn.TranslitTests\Kvn.TranslitTests.csproj", "{F33A00F9-6C57-4F88-A275-972BE269C61E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EFA542A-8A0D-47A4-92E1-0401F16E1F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EFA542A-8A0D-47A4-92E1-0401F16E1F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EFA542A-8A0D-47A4-92E1-0401F16E1F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EFA542A-8A0D-47A4-92E1-0401F16E1F40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F33A00F9-6C57-4F88-A275-972BE269C61E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F33A00F9-6C57-4F88-A275-972BE269C61E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F33A00F9-6C57-4F88-A275-972BE269C61E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F33A00F9-6C57-4F88-A275-972BE269C61E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
