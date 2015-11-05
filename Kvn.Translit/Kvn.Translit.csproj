@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="RuEngParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UaEngParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="nuget.exe" />
@@ -49,11 +50,16 @@
   <ItemGroup>
     <None Include="Kvn.Translit.nuspec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>nuget pack Kvn.Translit.nuspec</PostBuildEvent>
+    <PostBuildEvent>md lib\4.5.2
+copy *.dll lib\4.5.2
+del /f *.dll
+del /f *.pdb
+nuget pack Kvn.Translit.nuspec</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

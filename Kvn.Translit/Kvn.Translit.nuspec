@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Kvn.Translit.dll</id>
-    <version>1.0.0.0</version>
+    <version>1.0.3</version>
     <title>Transliterate tool russian to english</title>
     <authors>Vladimir Korotenko</authors>
     <owners>Vladimir Korotenko</owners>    
