@@ -1,12 +1,14 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿#region License
+// Разработано: Коротенко Владимиром Николаевичем (Vladimir N. Korotenko)
+// email: koroten@ya.ru
+// skype:vladimir-korotenko 
+// https://vkorotenko.ru
+// Создано:  20.08.2019 23:16
+#endregion
 using Kvn.Translit;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Kvn.Translit.Tests
+namespace Kvn.TranslitTests
 {
     [TestClass()]
     public class RuEngParserTests

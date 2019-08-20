@@ -1,4 +1,4 @@
 http://stackoverflow.com/questions/15097538/nuget-install-exit-code-9009
-Странно но у меня сработало скопировать nuget в папку c:\windows
+РЎРєРѕРїРёСЂРѕРІР°С‚СЊ СЃРІРµР¶РёР№ nuget РІ РїР°РїРєСѓ c:\windows РёР»Рё РґРѕР±Р°РІРёС‚СЊ РІ РїСѓС‚Рё РїРѕРёСЃРєР°, С…Рј
 https://nuget.org/nuget.exe
 https://docs.nuget.org/create/creating-and-publishing-a-package
