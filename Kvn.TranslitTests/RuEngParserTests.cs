@@ -20,5 +20,12 @@ namespace Kvn.TranslitTests
             var result = trans.Transliterate("Тест");
             Assert.AreEqual("test",result);
         }
+        [TestMethod()]
+        public void TransliterateSpecialTest()
+        {
+            var trans = new RuEngParser();
+            var result = trans.Transliterate("Кабардино-Балкарская");
+            Assert.AreEqual("kabardino-balkarskaya", result);
+        }
     }
 }
