@@ -13,19 +13,33 @@ namespace Kvn.TranslitTests
     [TestClass()]
     public class RuEngParserTests
     {
+        RuEngParser _trans = new RuEngParser();
         [TestMethod()]
         public void TransliterateTest()
-        {
-            var trans = new RuEngParser();
-            var result = trans.Transliterate("Тест");
+        {            
+            var result = _trans.Transliterate("Тест");
             Assert.AreEqual("test",result);
         }
         [TestMethod()]
         public void TransliterateSpecialTest()
-        {
-            var trans = new RuEngParser();
-            var result = trans.Transliterate("Кабардино-Балкарская");
+        {            
+            var result = _trans.Transliterate("Кабардино-Балкарская");
             Assert.AreEqual("kabardino-balkarskaya", result);
+        }
+        [TestMethod]
+        public void MariyAlTest()
+        {
+            var teststring = "Марий Эл";            
+            var result = _trans.Transliterate(teststring);
+            Assert.AreEqual("marij e`l", result);
+        }
+
+        [TestMethod]
+        public void TransliteUrlSafeTest()
+        {
+            var teststring = "Марий Эл";
+            var result = _trans.TransliteUrlSafe(teststring);
+            Assert.AreEqual("marij_el", result);
         }
     }
 }

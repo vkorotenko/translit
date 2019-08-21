@@ -2,9 +2,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 <PropertyGroup>
     <PackageId>Kvn.Translit</PackageId>
-    <PackageVersion>1.0.4</PackageVersion>
+    <PackageVersion>1.0.6</PackageVersion>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageTags>Transliterate tool russian to english</PackageTags>
+    <PackageTags>translit transliterate russian</PackageTags>
     <PackageProjectUrl>https://github.com/vkorotenko/translit</PackageProjectUrl>
   </PropertyGroup>
 
@@ -65,13 +65,14 @@
   <PropertyGroup>
     <RepositoryUrl>https://github.com/vkorotenko/translit</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <AssemblyVersion>1.0.5.0</AssemblyVersion>
-    <FileVersion>1.0.5.0</FileVersion>
-    <Version>1.0.5</Version>
+    <AssemblyVersion>1.0.6.0</AssemblyVersion>
+    <FileVersion>1.0.6.0</FileVersion>
+    <Version>1.0.6</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseUrl>https://raw.githubusercontent.com/vkorotenko/translit/master/LICENSE</PackageLicenseUrl>
     <Copyright>Vladimir Korotenko</Copyright>
     <Description>Transliterate tool russian to english</Description>
+    <Authors>Vladimir Korotenko</Authors>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -6,6 +6,7 @@
 // Создано:  20.08.2019 23:16
 #endregion
 using System.Collections.Generic;
+using System.Net;
 using System.Text;
 
 namespace Kvn.Translit
@@ -72,9 +73,30 @@ namespace Kvn.Translit
             source = source.ToUpper();
             foreach (var ch in source)
             {
-                sb.Append(_ruEngDict[ch]);
+                try
+                {
+                    sb.Append(_ruEngDict[ch]);
+                }
+                catch
+                {
+                    sb.Append(ch);
+                }
             }
             return sb.ToString();
+        }
+        /// <summary>
+        /// Кодирует сроку в ЧПУ строку, выбрасывает мусорные символы
+        /// </summary>
+        /// <param name="source"></param>
+        /// <returns></returns>
+        public string TransliteUrlSafe(string source)
+        {
+            var translite = Transliterate(source);
+            translite = translite.Replace(" ", "_");
+            translite = translite.Replace("`", "");
+            translite = translite.Replace("#", "");
+            translite = translite.Replace("'", "");
+            return WebUtility.HtmlEncode(translite);
         }
     }
 }
