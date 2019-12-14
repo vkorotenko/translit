@@ -13,7 +13,7 @@ namespace Kvn.TranslitTests
     [TestClass()]
     public class RuEngParserTests
     {
-        RuEngParser _trans = new RuEngParser();
+        private readonly ITransliterate _trans = Fabric.GetInstance();
         [TestMethod()]
         public void TransliterateTest()
         {            
@@ -38,7 +38,7 @@ namespace Kvn.TranslitTests
         public void TransliteUrlSafeTest()
         {
             var teststring = "Марий Эл";
-            var result = _trans.TransliteUrlSafe(teststring);
+            var result = _trans.Transliterate(teststring).GetWebSafe();
             Assert.AreEqual("marij_el", result);
         }
     }
