@@ -3,7 +3,7 @@
     <PackageId>Kvn.Translit</PackageId>
     <PackageVersion>1.0.7</PackageVersion>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageTags>translit transliterate russian iso9</PackageTags>
+    <PackageTags>translit transliterate russian ukrainian belarus hungary macedonian iso9</PackageTags>
     <PackageProjectUrl>https://github.com/vkorotenko/translit</PackageProjectUrl>
   </PropertyGroup>
   
@@ -66,7 +66,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
@@ -78,11 +81,13 @@
     <FileVersion>1.0.7.0</FileVersion>
     <Version>1.0.7</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/vkorotenko/translit/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
     <Copyright>Vladimir Korotenko</Copyright>
-    <Description>Transliterate tool russian to english</Description>
+    <Description>Package for transliteration in accordance with the ISO 9 standard. The following languages are supported: Russian, Ukrainian, Belorussian, Bulgarian, Macedonian</Description>
     <Authors>Vladimir Korotenko</Authors>
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReleaseNotes>Package for transliteration in accordance with the ISO 9 standard. The following languages are supported: Russian, Ukrainian, Belorussian, Bulgarian, Macedonian</PackageReleaseNotes>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard1.3|AnyCPU'">
     <NoWarn>1701;1702</NoWarn>
