@@ -32,5 +32,16 @@ namespace Kvn.Translit
             value = value.Replace("'", "");
             return WebUtility.HtmlEncode(value);
         }
+        
+        /// <summary>
+        /// Extension  method for transliterate string. For web safe string use helper <see cref="GetWebSafe"/>
+        /// </summary>
+        /// <param name="source">Source string in UTF-8</param>
+        /// <param name="lang">Language of translition table, <see cref="Lang"/></param>
+        /// <returns>Transliterate result</returns>
+        public static string Translit(this string source, Lang lang = Lang.RU)
+        {
+            return Fabric.GetInstance(lang).Transliterate(source);
+        }
     }
 }

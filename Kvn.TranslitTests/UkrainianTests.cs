@@ -15,5 +15,15 @@ namespace Kvn.TranslitTests
             var expected = "z pochatku dobi bojoviki 5 razІv porushili rezhim tishІ, zahinuv ukrains`kij boyecz`";
             Assert.AreEqual(actual,expected);
         }
+        [TestMethod]
+        public void InstantiateTest()
+        {
+            var src = "Жизнь";
+            var expected = "zhizn";
+            var actual = src
+                .Translit(Lang.UA)
+                .GetWebSafe();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

@@ -41,5 +41,16 @@ namespace Kvn.TranslitTests
             var result = _trans.Transliterate(teststring).GetWebSafe();
             Assert.AreEqual("marij_el", result);
         }
+
+        [TestMethod]
+        public void TestExtension()
+        {
+            var teststring = "Марий Эл";
+            var result = teststring
+                .Translit()
+                .GetWebSafe();
+
+            Assert.AreEqual("marij_el", result);
+        } 
     }
 }
